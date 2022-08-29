@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Interactive kanban board using an API">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="icons/favicon.ico">
+    <script src="js/app.js" defer></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
+    <script src="js/utility.js"></script>
+</head>
+
+<body>
+    <header class="page-header">
+        <h1>Kanban Board</h1>
+        <form class="theme-select">
+            <label for="theme-select">Change Theme:</label>
+            <select name="theme-select" id="theme-select">
+                <option aria-hidden="true" value="default">--Please choose a color theme--</option>
+                <option aria-hidden="true" value="dark">Dark Theme</option>
+                <option aria-hidden="true" value="superman">Superman Theme</option>
+                <option aria-hidden="true" value="gabby">Gabby's Dollhouse Theme</option>
+                <option aria-hidden="true" value="default">Default Theme</option>
+            </select>
+        </form>
+    </header>
+    <main>
+    </main>
+    <footer>
+        <p>Phillip Harden | 2022</p>
+    </footer>
+</body>
+
+</html>

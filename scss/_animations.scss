@@ -1,0 +1,81 @@
+// Animation shorthand
+// animation-name, animation-duration, animation-timing-function, animation-delay,
+// animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state
+
+section {
+    animation: drop-down $animate-time ease-in;
+}
+
+article {
+    animation-name: expand;
+    animation-duration: $animate-time-delay;
+    animation-timing-function: ease-in;
+    animation-delay: $animate-time-delay;
+    animation-fill-mode: forwards;
+    transform: scale(0);
+}
+
+h1,
+.theme-select,
+.page-header {
+    animation: drop-down-fade $animate-time ease-in $animate-time-delay;
+    animation-fill-mode: forwards;
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+ section button:hover {
+    animation-name: pulse;
+    animation-duration: $animate-time-delay;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        border-radius: 100%;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes drop-down-fade {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes drop-down {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: scale(0);
+    }
+
+    90% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,38 @@
+button {
+    cursor: pointer;
+    transition: $animate-time;
+}
+
+section button {
+    background-color: $accent-color;
+    border: none;
+    border-radius: 20px;
+    font-size: 0;
+    @include squared(22px);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.8;
+ 
+    &:hover {
+        opacity: 1;        
+    }
+
+    @media (min-width: 1280px) {
+        @include squared(25px);
+        background-size: 23px;
+    }
+}
+
+.add-task {
+    background-image: url(/icons/add.svg);
+}
+
+.edit-task, .edit-list {
+    background-image: url(/icons/edit.svg);
+}
+
+.delete-task {
+    background-image: url(/icons/delete.svg);
+}

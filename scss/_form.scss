@@ -1,0 +1,144 @@
+.form-add-task {
+    width: 400px;
+    padding: $spacing;
+    background-color: $primary-color-light;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+    box-shadow: 3px 3px 5px $accent-color;
+    @extend %rounded-border;
+
+    legend {
+        font-size: 2rem;
+        font-family: $header-font;
+        text-transform: uppercase;
+        margin-bottom: $spacing;
+    }
+
+    @media (min-width: 640px) {
+        width: 500px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 600px;
+    }
+
+    button {
+        padding: $spacing;
+        border: none;
+        border-radius: $spacing;
+        background-color: $primary-color-dark;
+        color: $secondary-text-color;
+        width: 100%;
+        margin-bottom: $spacing;
+        opacity: 0.8;
+    }
+
+    .cancel {
+        background-color: $accent-color;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+    input:hover,
+    textarea:hover {
+        background-color: $secondary-text-color;
+    }
+
+    input:valid,
+    textarea:valid {
+        border: 2px solid $accent-color;
+    }
+
+    input:invalid,
+    textarea:invalid {
+        border: 3px double $error-color;
+    }
+
+    input,
+    textarea {
+        width: 90%;
+        padding: $spacing;
+        margin: 5px 0 20px 0;
+        border: none;
+        background: darken($secondary-text-color, 5);
+        font-family: $main-font;
+        font-size: 1.6rem;
+        color: $accent-color;
+        box-shadow: 2px 2px 5px $accent-color;
+        transition: $animate-time;
+    }
+
+    input:focus,
+    textarea:focus {
+        background-color: $secondary-text-color;
+        outline: none;
+    }
+}
+
+.error {
+    background: $error-color;
+    color: $secondary-text-color;
+    font-size: 1.6rem;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+.confirm-delete {
+    width: 200px;
+    padding: $spacing;
+    background-color: $primary-color-light;
+    position: fixed;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%, 5%);
+    z-index: 9;
+    box-shadow: 3px 3px 5px $accent-color;
+    @extend %rounded-border;
+
+    legend {
+        font-size: 2rem;
+        font-family: $main-font;
+        margin-bottom: $spacing;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 640px) {
+        width: 500px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 600px;
+    }
+
+    div {
+        display: flex;
+    }
+
+    button {
+        margin-top: 30px;
+        margin: 30px auto 0;
+        padding: $spacing;
+        border: none;
+        border-radius: $spacing;
+        background-color: $primary-color-dark;
+        color: $secondary-text-color;
+        cursor: pointer;
+        width: 40%;
+        margin-bottom: $spacing;
+        opacity: 0.8;
+    }
+
+    .cancel {
+        background-color: $accent-color;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+}

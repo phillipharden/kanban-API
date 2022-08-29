@@ -1,0 +1,81 @@
+body {
+    background-color: $primary-color-light;
+    transition: background $animate-time linear;
+}
+
+.page-header {
+    padding: $spacing;
+    background-color: $primary-color-dark;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    padding: $spacing;
+    max-width: 800px;
+    margin: auto;
+
+    @media (min-width: 1540px) {
+        max-width: 1400px; // change these ************************************************************************************
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
+
+section {
+    @extend %rounded-border;
+    background-color: $primary-color;
+    margin: 30px 0;
+    box-shadow: 5px 5px 5px $shadow-color;
+
+    &:not(:nth-child(1)) {
+        @media (min-width: 1280px) {
+            margin-left: $spacing;
+        }
+    }   
+
+    @media (min-width: 1540px) {
+        flex: 1;
+        width: 0;
+    }
+
+    header {
+        @extend %button-section-display;
+        @extend %padding-margin-default;
+        grid-template-columns: 90% 10% ;
+    }
+}
+
+article {
+    @extend %rounded-border;
+    @extend %padding-margin-default;
+    background-color: $primary-color-light;
+
+    header {
+        grid-template-columns: 90% 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    p {
+        margin: 30px 0;
+        text-align: justify;
+    }
+
+    time {
+        margin: auto 0;
+
+        @media (min-width: 1280px) {
+            font-size: 2rem;
+        }
+    }
+}
+
+footer {
+    padding: $spacing;
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: $primary-color-dark;
+}

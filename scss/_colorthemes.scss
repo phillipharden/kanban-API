@@ -1,0 +1,380 @@
+// DARK MODE COLOR THEME
+.dark {
+    background-color: $dark-theme-primary-color-dark;
+
+    .page-header {
+        background-color: darken($primary-color-dark, 35);
+    }
+
+    .theme-select {
+        box-shadow: none;
+
+        label {
+            color: $secondary-text-color;
+        }
+
+        select {
+            border-color: $primary-text-color;
+        }
+    }
+
+    section {
+        background-color: darken($primary-color-dark, 35);
+        box-shadow: .2rem .2rem .7rem darken($shadow-color, 40);
+
+        header {
+            background-color: darken($primary-color-dark, 35);
+        }
+
+        button {
+            background-color: lighten($accent-color, 40);
+        }
+    }
+
+    article {
+        background-color: $dark-theme-primary-color-light;
+
+        header {
+            background-color: $dark-theme-primary-color-light;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: darken($secondary-text-color, 10);
+    }
+
+    p {
+        color: $secondary-text-color;
+    }
+
+    time {
+        color: darken($secondary-text-color, 10);
+    }
+
+    .page-footer {
+        background-color: darken($primary-color-dark, 35);
+        color: $secondary-text-color;
+    }
+
+    .form-add-task {
+        background-color: $dark-theme-primary-color-light;
+        box-shadow: 3px 3px 5px $dark-theme-accent-color;
+        color: $secondary-text-color;
+
+        legend {
+            color: darken($secondary-text-color, 20);
+        }
+
+        button {
+            background-color: darken($primary-color-dark, 15);
+        }
+
+        .cancel {
+            background-color: $accent-color;
+        }
+
+        input,
+        textarea {
+            background: darken($secondary-text-color, 60);
+            color: $secondary-text-color;
+            box-shadow: 2px 2px 5px $dark-theme-accent-color;
+        }
+
+        input:focus,
+        textarea:focus {
+            background-color: darken($secondary-text-color, 70);
+        }
+
+        input:hover,
+        textarea:hover {
+            background-color: darken($secondary-text-color, 50);
+        }
+
+        input:valid,
+        textarea:valid {
+            border: 2px solid $accent-color;
+        }
+
+        input:invalid,
+        textarea:invalid {
+            border: 3px double darken($error-color, 10);
+        }
+
+        ::placeholder {
+            color: darken($secondary-text-color, 10);
+        }
+
+        ::-webkit-calendar-picker-indicator {
+            filter: invert(1);
+        }
+    }
+}
+
+.dark, .superman {
+    .error {
+        background: darken($error-color, 10);
+        color: $secondary-text-color;
+    }
+
+    .add-task {
+        background-image: url(/icons/add-blk.svg);
+    }
+
+    .edit-task, .edit-list {
+        background-image: url(/icons/edit-blk.svg);
+    }
+
+    .delete-task {
+        background-image: url(/icons/delete-blk.svg);
+    }
+}
+
+.superman {
+    background-color: $superman-theme-primary-color;
+
+    header {
+        background-color: $superman-theme-primary-color-light;
+    }
+
+    .theme-select {
+        background-color: $superman-theme-primary-color-light;
+        box-shadow: none;
+
+        label {
+            color: $superman-theme-accent-color;
+        }
+
+        select {
+            background-color: $superman-theme-primary-color;
+            color: $secondary-text-color;
+            border-color: $superman-theme-primary-color;
+
+        }
+    }
+
+    section {
+        background-color: $superman-theme-primary-color-dark;
+        box-shadow: 2px 2px 5px $superman-theme-primary-color-dark;
+
+        header {
+            background-color: $superman-theme-primary-color-dark;
+        }
+
+        button {
+            background-color: $superman-theme-primary-color-light;
+        }
+    }
+
+    article, article header {
+        background-color: lighten($superman-theme-primary-color, 75);
+      
+    }
+
+    h1,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $superman-theme-accent-color;
+    }
+
+    h2 {
+        color: $secondary-text-color;
+    }
+
+
+
+    p {
+        color: lighten($primary-text-color, 10);
+    }
+
+    time {
+        color: $superman-theme-accent-color;
+    }
+
+    .page-footer {
+        background-color: $superman-theme-primary-color-light;
+
+        p {
+            color: $primary-text-color;
+        }
+    }
+
+    form {
+        background-color: $superman-theme-primary-color;
+        box-shadow: 3px 3px 5px $superman-theme-accent-color;
+
+        legend {
+            color: $superman-theme-primary-color-light;
+        }
+
+        button {
+            background-color: $superman-theme-primary-color-light;
+            color: $superman-theme-accent-color;
+            border: 1px solid $superman-theme-accent-color;
+        }
+
+        .cancel {
+            background-color: $superman-theme-primary-color-light;
+        }
+    }
+
+    input,
+    textarea {
+        background: lighten($superman-theme-primary-color-light, 50);
+        color: $superman-theme-accent-color;
+        box-shadow: 2px 2px 5px $superman-theme-accent-color;
+    }
+
+    input:focus,
+    textarea:focus {
+        background-color: lighten($superman-theme-primary-color-light, 30);
+    }
+
+    .error {
+        background: darken($error-color, 10);
+        color: $superman-theme-accent-color;
+    }
+
+    input:hover,
+    textarea:hover {
+        background-color: lighten($superman-theme-primary-color-light, 25);
+    }
+
+    input:valid,
+    textarea:valid {
+        border: 2px solid $superman-theme-accent-color;
+    }
+
+    input:invalid,
+    textarea:invalid {
+        border: 3px double darken($error-color, 10);
+    }
+
+    ::placeholder {
+        color: $superman-theme-accent-color;
+    }
+}
+
+.gabby {
+    background-color: $gabby-theme-primary-color;
+
+    header {
+        background-color: $gabby-theme-primary-color-dark;
+    }
+
+    .theme-select {
+        box-shadow: none;
+
+        label {
+            color: $secondary-text-color;
+        }
+
+        select {
+            background-color: darken($gabby-theme-primary-color, 20);
+            color: lighten($primary-text-color, 10);
+            border-color: darken($gabby-theme-accent-color, 25);
+        }
+    }
+
+    section {
+        background-color: $gabby-theme-primary-color-dark;
+        box-shadow: 2px 2px 5px $primary-color-dark;
+
+        header {
+            background-color: $gabby-theme-primary-color-dark;
+        }
+
+        button {
+            background-color: darken($gabby-theme-accent-color, 45);
+        }
+    }
+
+    article, article header {
+        background-color: $gabby-theme-primary-color-light;
+    }
+
+    h1 {
+        color: darken($primary-text-color, 25);
+    }
+
+    h2 {
+        color: lighten($gabby-theme-primary-color-light, 15);
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: lighten($primary-text-color, 10);
+    }
+
+    p {
+        color: $primary-text-color;
+    }
+
+    time {
+        color: $primary-text-color;
+    }
+
+    .page-footer {
+        background-color: $gabby-theme-primary-color-dark;
+
+        p {
+            color: $secondary-text-color;
+        }
+    }
+
+    form {
+        background-color: $gabby-theme-primary-color-dark;
+        box-shadow: 3px 3px 5px $gabby-theme-accent-color;
+
+        legend {
+            color: $gabby-theme-primary-color-light;
+        }
+
+        button {
+            background-color: $gabby-theme-accent-color;
+        }
+
+        .cancel {
+            background-color: lighten($error-color, 15);
+        }
+    }
+
+    input,
+    textarea {
+        background-color: darken($gabby-theme-primary-color-light, 10);
+        color: $primary-text-color;
+        box-shadow: 2px 2px 5px $gabby-theme-accent-color;
+    }
+
+    input:focus,
+    textarea:focus {
+        background-color: lighten($gabby-theme-primary-color-light, 10);
+    }
+
+    input:hover,
+    textarea:hover {
+        background-color: $gabby-theme-primary-color-light;
+    }
+
+    input:valid,
+    textarea:valid {
+        border: 2px solid $gabby-theme-accent-color;
+    }
+
+    input:invalid,
+    textarea:invalid {
+        border: 3px double darken($error-color, 10);
+    }
+
+    ::placeholder {
+        color: lighten($primary-text-color, 20);
+    }
+}
