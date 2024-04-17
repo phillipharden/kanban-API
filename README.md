@@ -1,4 +1,4 @@
-# DWS2 Kanban Board
+# Kanban Board
 
 Kanban board application 🚀
 
