@@ -1,19 +1,40 @@
-# Kanban Board
+# Kanban API Board 📋⚡
 
-Kanban board application 🚀
+### A Kanban board application built using an API to manage tasks, organize workflow, and provide an interactive user experience.
 
-## Foundation
+## 🚀 Features
 
-For the foundation I created some placeholder elements in html in order to syle the potential content of the page.
+- 📋 Kanban-style task management system  
+- ➕ Add and delete tasks within columns  
+- 🎨 Multiple themes including dark mode  
+- ⚡ Interactive UI with animations  
+- 🧠 Organized workflow for task tracking  
+- 📱 Fully responsive design (mobile-friendly)  
 
-## Dark Mode and other themes
+## 🛠️ Tech Stack
 
-I created a dark mode, as well as a couple other color theme options for the user to interact with.
+- HTML – Structure  
+- SCSS / CSS – Styling  
+- JavaScript – Functionality  
+- API Integration – Data handling  
 
-## UI
+## 📂 Installation & Setup
 
-I allowed the user to add and delete tasks from each task list.
+Clone this repo and open the project:
 
-## Animations
+git clone https://github.com/phillipharden/kanban-API.git  
+cd kanban-API  
 
-I made the page load using animations to give the user more of a fun experience. I also used animation to make the interactive buttons pulsate. 
+Open `index.html` in your browser to view the app  
+
+<br/>
+
+## 🌍 Live Demo
+
+(Add your live link here if deployed)
+
+## 🙌 Credits
+
+Website built by Phillip Harden  
+
+Designed as a Kanban board application to practice API integration, task management systems, and interactive front-end development
